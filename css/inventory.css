@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a:visited {
+    color: inherit;
+}
+
+
+body {
+    background: linear-gradient(#2626B0,#151566);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    font-size: 10;
+    align-items: center;
+}
+
+#back {
+    width: 8%;
+}
+
+#back i {
+    position: absolute;
+    left: 1%;
+    font-size: 10vh;
+    color: #d7dff4;
+}
+
+#back i:hover {
+    cursor: pointer;
+}
+
+/* inventory */
+
+.items {
+    position: absolute;
+    width: 86%;
+    top:30%; left:7%;
+    text-align: left;
+    font-size: 13vh;
+}
+
+.items ul li {
+    color: #f0f4ec;
+    display: inline;
+    margin-right: 5%; margin-left: 5%;
+    -webkit-text-shadow: -1px 1px 35px rgba(71, 72, 69, 0.85);
+    -moz-text-shadow: -1px 1px 35px rgba(60, 61, 58, 0.85);
+    text-shadow: -1px 1px 35px rgba(60, 62, 58, 0.85);
+}
+
+.items ul li i {
+    transition: 0.5s;
+}
+
+.items ul li i:hover {
+    color:#ff0202;
+    transform: scale(1.3);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#button1.--allow:hover {
+    color:#17ff02;
+}
+#button2.--allow:hover {
+    color:#17ff02;
+}
+#button3.--allow:hover {
+    color:#17ff02;
+}
+#style1.--allow:hover {
+    color:#17ff02;
+}
+#style2.--allow:hover {
+    color:#17ff02;
+}
+#style3.--allow:hover {
+    color:#17ff02;
+}
+
+#styles {
+    top:60%
+}
+
+#styles ul li i{
+    opacity: 0.9;
+    border-radius: 2vh;
+}
+
+/* !inventory */

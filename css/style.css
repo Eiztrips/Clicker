@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a:visited {
+    color: inherit;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    font-size: 10;
+}
+
+/* MENU */
+
+#menu {
+    position: absolute;
+    height: 40%; width: 3%;
+    top: 30%; left: 1%;
+    border-radius: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-left: 1%; padding-right: 1%;
+    -webkit-box-shadow: 0px 0px 57px 24px rgba(0, 0, 0, 0.24);
+    -moz-box-shadow: 0px 0px 57px 24px rgba(0, 0, 0, 0.24);
+    box-shadow: 0px 0px 57px 24px rgba(0, 0, 0, 0.24);
+}
+
+#menu ul li{
+    font-size: 4vh;
+    margin-top: 100%; margin-bottom: 100%;
+    transition: all linear 1s;
+    transform: scale(1);
+    cursor: pointer;
+} 
+
+#menu ul li:hover{
+    transition: 1s;
+    transform: scale(1.5);
+} 
+
+/* !MENU */
+
+/* BUTTON */
+
+#button {
+    position: absolute;
+    top: 34%; left: 39%;
+    font-size: 30vh;
+    -webkit-text-shadow: -1px 1px 35px rgba(159, 157, 157, 0.85);
+    -moz-text-shadow: -1px 1px 35px rgba(167, 167, 167, 0.85);
+    text-shadow: -1px 1px 35px rgba(139, 139, 139, 0.85);
+    transition: 1s;
+}
+
+#button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+#button:active {
+    transform: scale(1.3);
+    transition: 0.03s;
+}
+
+/* !BUTTON */
+
+/* SCORE-BOARD */
+
+#score-board {
+    position: absolute;
+    height: 25%; width: 25%;
+    right: 3%; top: 3%;
+    border-radius: 2vh;
+    font-size: 2vh; font-family: "Press Start 2P", system-ui;
+    padding: 1% 1% 1% 1%;
+    -webkit-box-shadow: 0px 0px 57px 24px rgba(0, 0, 0, 0.24);
+    -moz-box-shadow: 0px 0px 57px 24px rgba(0, 0, 0, 0.24);
+    box-shadow: 0px 0px 57px 24px rgba(0, 0, 0, 0.24);
+}
+
+.score-button {
+    text-align: left;
+    border-radius: 1vh;
+    height: 10%;
+    width: 80%;
+    padding: 2%;
+    font-size: 1.8vh;
+}
+
+#xp {
+    width: 100%; height: 20%;
+    border-radius: 1vh;
+    margin-bottom: 2%;
+    text-align: center;
+    padding-top: 0%;
+}
+
+#xp span {
+    bottom: 100%;
+}
+
+#xp progress {
+    width: 90%; height: 40%;
+    background: rgba(0, 0, 255, 0);
+    border-radius: 1vh;
+}
+
+#xp progress::-webkit-progress-bar {
+    background: #00000000;
+}
+
+progress::-webkit-progress-value {
+    background: #ff000057;
+}
+
+progress::-webkit-progress-inner-element {
+    border: 0.01em solid rgb(255, 255, 255);
+}
+
+#score-board span {
+    font-weight: 900;
+}
+
+/* !SCORE-BOARD */
+
+/* Tooltip */
+[data-tooltip] {
+    position: relative;
+}
+
+[data-tooltip]::after {
+ content: attr(data-tooltip);
+ font-family: "Press Start 2P", system-ui;
+ position: absolute;
+ top:2em;
+ padding: 0.5em;
+ font-size: 3vh; text-align: center;
+ top:-15%; left: 2em;
+ width: 700%;
+ border-radius: 2vh;
+ -webkit-box-shadow: 0px 0px 50px -1px rgb(0, 0, 0);
+ -moz-box-shadow: 0px 0px 50px -1px rgb(0, 0, 0);
+ box-shadow: 0px 0px 50px -1px rgb(0, 0, 0);
+ opacity: 0;
+ transition: 1s;
+} 
+
+[data-tooltip]:hover::after {
+ opacity: 1;
+}
+/* !Tooltip */
+
+/* !Remove button */
+#reset {
+    font-family: "Press Start 2P", system-ui;
+    position: absolute;
+    height: 3%; width: 15%;
+    text-align: center;
+    padding: 1%;
+    padding-bottom: 2.6%;
+    right: 3%; top: 35%;
+    border-radius: 2vh;
+    font-weight: 900;
+    -webkit-box-shadow: 0px 0px 57px 24px rgba(0, 0, 0, 0.24);
+    -moz-box-shadow: 0px 0px 57px 24px rgba(0, 0, 0, 0.24);
+    box-shadow: 0px 0px 57px 24px rgba(0, 0, 0, 0.24);
+}
+
+#reset:hover {
+    transform: scale(1.3);
+    transition: 1s;
+    cursor: pointer;
+}
+
+#reset {
+    transition: 1s;
+}
+
+#reset span {
+    font-size: 3vh;
+}
+/* !Remove button */
