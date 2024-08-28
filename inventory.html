@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name = "author" content="Eiztrips">
+
+    <link rel="stylesheet" href="css/inventory.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@100..700&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <title>Clicker-shop</title>
+</head>
+<body>
+    <div id="back"><a href="index.html"><i class="fa-solid fa-backward"></i></a></div>
+
+    <div class="items" id="buttons" style="background-color: #00000068">
+        <ul style="user-select: none;">
+            <li style='font-family: "Press Start 2P", system-ui; font-size: 8vh;'>Кнопки</li>
+            <li><i class="fa-solid fa-snowflake" id ="button1" onclick="EquipItem(['User.b1', 'true'])"></i></li>
+            <li><i class="fa-solid fa-star" id ="button2" onclick="EquipItem(['User.b2', 'true'])"></i></li>
+            <li><i class="fa-solid fa-otter" id ="button3" onclick="EquipItem(['User.b3', 'true'])"></i></li>
+        </ul>
+    </div>
+
+    <div class="items" id="styles" style="background-color: #00000068; margin-top: 3%;">
+        <ul style="user-select: none;">
+            <li style='font-family: "Press Start 2P", system-ui; font-size: 8vh;'>Стили</li>
+            <li><i class="fa-regular fa-heart" style="background: linear-gradient(#CBB942, #f8eb98);" id ="style1" onclick="EquipItem(['User.s1', 'true'])"></i></li>
+            <li><i class="fa-regular fa-heart" style="background: linear-gradient(#0202F0, #EF03EF);" id ="style2" onclick="EquipItem(['User.s2', 'true'])"></i></li>
+            <li><i class="fa-regular fa-heart" style="background: linear-gradient(#01F3F3, #058787);" id ="style3" onclick="EquipItem(['User.s3', 'true'])"></i></li>
+        </ul>
+    </div>
+
+    <script src="js\inventory.js"></script>
+    <script src="https://kit.fontawesome.com/b9a52bb613.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name = "author" content="Eiztrips">
+
+    <link rel="stylesheet" href="css/style-shop.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@100..700&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <title>Clicker-shop</title>
+</head>
+<body>
+    <div id="back"><a href="index.html"><i class="fa-solid fa-backward"></i></a></div>
+
+    <div class="shop">
+        <ul style="user-select: none;">
+            <li data-tooltip="множитель"><i class="fa-solid fa-gauge-high" onclick="BuyX()"></i></li>
+            <li data-tooltip="новая кнопка"><i class="fa-solid fa-fire" onclick="BuyButton()"></i></li>
+            <li data-tooltip="новый стиль"><i class="fa-solid fa-heart" onclick="BuyStyle()"></i></li>
+        </ul>
+    </div>
+
+    <div class="shop" id='prices'>
+        <ul style="user-select: none;">
+            <li>1 000 $</li>
+            <li>5 000 $</li>
+            <li>10 000 $</li>
+        </ul>
+    </div>
+
+    <script src="js\shop.js"></script>
+    <script src="https://kit.fontawesome.com/b9a52bb613.js" crossorigin="anonymous"></script>
+</body>
+</html>

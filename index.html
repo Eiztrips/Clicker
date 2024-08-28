@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name = "author" content="Eiztrips">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@100..700&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <title>Clicker</title>
+</head>
+<body id="body">
+
+    <div class="menus" id="menu">
+        <ul style="list-style: none;">
+            <li class="text">
+                <a href="shop.html" onclick="SaveAttr()">
+                    <i class="fa-solid fa-shop" class="text" data-tooltip="магазин"></i>
+                </a>
+            </li>
+            <li style="font-size: 4.5vh;" class="text">
+                <a href="inventory.html" onclick="SaveAttr()">
+                    <i class="fa-solid fa-heart" data-tooltip="стили и кнопки"></i>
+                </a>
+            </li>
+            <li style="font-size: 4.5vh;" class="text">
+                <a href="abilities.html">
+                    <i class="fa-solid fa-circle-up" data-tooltip="Достижения"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <i class="fa-solid fa-ghost" id="button" onclick="ButtonClicker()"></i>
+
+    <div id="score-board" class="menus" style="user-select: none;">
+        <div id="xp">
+            <span class="text">
+                Опыт: <a id="jsxp"></a>/<a id="jsxpmax"></a>
+            </span>
+            <progress id="progress" max="100" value="60"></progress>
+        </div><br>
+        <div class="score-button" id="cash"><span class="text">Деньги: <a id="jscash"></a>$</span></div><br>
+        <div class="score-button" id="lvl"><span class="text">Уровень: <a id="jslvl"></a></span></span></div><br>
+        <div class="score-button" id="count-click" style="float: left;"><span class="text">Кол-во кликов: <a id="jscount-click"></a></span></span></div>
+        <div class="score-button" id="multiplier" style="width: 10%; text-align: center; float: right;"><span class="text">X<span id="x"></span><a id="jscount-click"></a></span></span></div>
+    </div>
+
+    <div class="menus" id="reset" style="user-select: none;" onclick="RemoveAttr()"><span class="text">Сбросить статистику</span></div>
+
+    <script src="js\main.js"></script>
+    <script src="https://kit.fontawesome.com/b9a52bb613.js" crossorigin="anonymous"></script>
+</body>
+</html>
